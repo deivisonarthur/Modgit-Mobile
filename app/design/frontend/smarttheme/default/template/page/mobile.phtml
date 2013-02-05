@@ -1,0 +1,46 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+    <?php include_once 'head.inc'; ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+    <?php ob_start(); ?>
+    <div data-role="page">
+        <div data-role="header" data-theme="c">
+            <h1 id="category"><?php echo $this->getLayout()->getBlock('head')->getTitle(); ?></h1>
+        </div>
+        <div class="wrapper" data-role="content">
+            <?php echo $this->getChildHtml('global_notices') ?>
+            <div class="page">
+                <?php echo $this->getChildHtml('header-mobile') ?>
+                <?php $head = $this->getLayout()->getBlock('header'); $welcome = $head->getWelcome(); if ($welcome): ?>
+                <p class="welcome-msg"><?php echo $welcome; ?></p>
+                <?php endif; ?>
+                <div class="main-container col1-layout">
+                    <div class="main">
+                        
+                        <div class="col-main">
+                            <?php echo $this->getChildHtml('global_messages') ?>
+                            <?php echo $this->getChildHtml('product_list') ?>
+                            <?php echo $this->getChildHtml('topMenu') ?>
+                            <?php echo $this->getChildHtml('breadcrumbs') ?>
+                            <?php /* todo
+                            <?php echo $this->getChildHtml('topLinks') ?>
+                            <?php echo $this->getChildHtml('footer_links') ?>
+                             */ ?>
+                            <?php echo $this->getChildHtml('store_switcher') ?>
+                        </div>
+                    </div>
+                </div>
+                <?php echo $this->getCopyright() ?>
+                <?php echo $this->getChildHtml('footer') ?>
+            </div>
+        </div>
+        <?php echo $this->getAbsoluteFooter() ?>
+    </div>
+    <?php $body = ob_get_flush();
+    echo preg_replace("@<script[^>]*>.+</script[^>]*>@i", "", $body);
+    ?>
+</body>
+</html>

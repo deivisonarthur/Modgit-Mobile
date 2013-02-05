@@ -1,0 +1,11 @@
+.product-essential .product-image img {
+    width: 100%;
+    max-width: 700px;
+}
+li.ui-btn-icon-left a {
+    margin-left: 1em;
+}
+div.store-switcher { margin: 1.2em 0; }
+div.store-switcher div.ui-select { width: 100%; }
+div.store-switcher div.ui-btn { margin: 0; }
+address { text-align: center; }

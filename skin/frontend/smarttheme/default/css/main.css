@@ -1,0 +1,151 @@
+.product-essential .product-image img {
+    width: 100%;
+    max-width: 700px;
+}
+li.ui-btn-icon-left a {
+    margin-left: 1em;
+}
+div.error-msg {
+    color: red;
+}
+.ui-field-contain .ui-checkbox {
+    display:inline-block;
+    width: 61%;
+}
+.ui-field-contain label.ui-input-text, .ui-field-contain label.ui-select {
+    vertical-align: baseline;
+    text-align: right;
+}
+ul.messages {
+    padding: 0;
+    list-style: none;
+}
+ul.messages li.error-msg li {
+    color: red;
+}
+ul.messages ul {
+    padding: 0;
+    list-style: none;
+}
+div.success-msg {
+    color: green;
+}
+div.add-to-cart {
+    margin: 1em 0;
+}
+div.add-to-cart label, div.add-to-cart input, div.add-to-cart div.ui-btn {
+    width: auto;
+    vertical-align: middle;
+    margin: 0 5px;
+    display: inline-block;
+}
+#shopping-cart-table {
+    width: 100%;
+    font-weight: normal;
+}
+#shopping-cart-table tr td {
+    padding: 0 8px;
+    border-top: 1px dashed #ccc;
+}
+#shopping-cart-table tbody tr td.product-name {
+    padding: 8px;
+}
+#shopping-cart-table thead tr th {
+    padding: 1em 0;
+    text-align: left;
+    text-indent: 8px;
+}
+#crosssell-wrap {
+    margin: 2em 0;
+}
+ul.checkout-types {
+    padding: 0;
+    list-style: none;
+    margin: 2em 0;
+}
+#shopping-cart-totals-table {
+    text-align: right;
+    padding: 1em;
+}
+#super-product-table td.a-center {
+    padding-left: 1em;
+    width: 50px;
+}
+#product-options-wrapper fieldset label.title {
+    display: block;
+}
+.qty-holder {
+    margin-top: 1em;
+    width: 200px;
+}
+.qty-holder label {
+    display: inline-block;
+}
+.qty-holder input {
+    width: 100px;
+}
+.ui-collapsible-heading a span.ui-btn {
+    text-indent: 0;
+}
+.buttons-set {
+    margin-top: 1em;
+}
+#checkout-review-table {
+    margin: 1em 0;
+}
+#checkout-review-table td {
+    padding: 5px;
+    border-top: 1px dashed #ccc;
+}
+ul.form-list {
+    list-style: none;
+    padding: 1em;
+}
+ul.form-list li {
+    padding: 0;
+    margin-bottom: 1em;
+}
+a.cvv-what-is-this {
+    display: none;
+}
+span.please-wait {
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+td.review-totals {
+    text-align: right;
+}
+td.review-totals span {
+    padding-left: 10px;
+}
+.paypal-or {
+    display:none;
+}
+input[type=text].qty {
+    width: 30px;
+}
+ul.messages {
+    padding: 1em;
+}
+.success-msg {
+    color: green;
+}
+.notice-msg {
+    color: IndianRed;
+}
+body.checkout-cart-index #shopping-cart-totals-table {
+    margin-top: 1em;
+    text-align: left;
+}
+.ui-field-contain div.ui-checkbox {
+    width: 100%;
+}
+div.label {
+    padding: 4px;
+}
+div.store-switcher { margin: 1.2em 0; }
+div.store-switcher div.ui-select { width: 100%; }
+div.store-switcher div.ui-btn { margin: 0; }
+address { text-align: center; }
